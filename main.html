@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> حِميتي </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--start header-->
+<div id="hmain">  
+    <img id="imghead" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQD-BmvO9gV1tcpNCry3CQrE_T8ZfYfUmFweQ&usqp=CAU" alt="">
+   <div id="head"> <h1> حِميتي</div>
+<div id="intmain">
+    <ul id="ul">
+   <li id="li">  <a  href=""><p> عن الموقع </p> </li> </a>
+<li id="li"> <a href=""> <p> منوعات </p></li> </a>
+<li id="li"> <a href=""> <p> اخبار كورونا </p></li> </a>
+
+</ul>
+</div>
+</div>
+<!--end header-->
+<!--بداية الديف الكبير المقسم على السطر-->
+<div class="maincontaner">
+    <!--داخله ديف -->
+<div class="cont12"> 
+        <!--داخله  3 ديفات مرتبة افقي -->
+<div class="contaner">
+   <div id="divhbmi"><h2 id="hbmi"> (BMI) حساب مؤشر كتلة الجسم  </h2> </div>
+    <div id="both">
+<div id="span">
+    <span id="s"> حاسبة مؤشر كتلة الجسم  هى أداة لتقييم الوزن الطبيعى أو زيادة الوزن، ويتم تقييم الوزن من خلال إستخدام مؤشر كتلة الجسم الذى يفحص العلاقة بين طول ووزن الجسم.</span>
+    </div>
+<!--end fact div-->
+<!-- start div info-->
+  <div id="diviinfo">
+ <label id="sex" > :الجنس </label> 
+   <form action="" method="get"  name="form1">
+   <ul id="ulsex"> 
+<li> <input type="radio"  name="sex" value="male"></li> 
+<li> <label for="male">ذكر</label> </li>
+<li>  <input type="radio"name="sex" value="female"> </li>
+<li> 
+  <label for="female">انثى</label></li>
+  </ul>
+</form>
+<ul id="uldiv">
+    <form>
+<li> <label for="age"> :العمر</label> </li>
+<li>   <input type="text" id="age"  placeholder="Enter Age"><br>
+</li>
+<li> <label for="hei">:الطول </label> </li>
+<li>   <input type="text" id="hei"  placeholder=" (cm)ادخل الطول" ><br>
+</li>
+<li> <label for="weight"> :الوزن </label> </li>
+<li>   <input type="text"  id="weight" placeholder=" ادخل الوزن" ><br>
+</li>
+<li> 
+    <button class="btsys" type="button" onclick="myFunction()"> احسب</button></li>
+</ul>
+</form>
+</div>
+</div>
+<div id="divres1">
+<p id="result1"></p> 
+<p id="res11"></p>
+</div>
+</div>
+<!--end div info-->
+<!--end div bmi-->
+<div class="contaner1">
+   <div id="divhbmi"><h2 id="hbmi">   حساب السعرات الحرارية    </h2> </div>
+    <!-- start div fact -->
+    <div id="both">
+<div id="span">
+    <span  >  
+        استخدام حاسبة السعرات الحرارية اليومية التي يحتاجها جسمك للحفاظ على وزنك
+         الحالي ,تم استخدام معادلة ميفلين سانت جوير والتي تعد اكثر المعادلات اعتماداً ودقة وتعتمد على الوزن 
+        والعمر والطول بالاضافة الي الجنس لحساب معدل الايض الاساسي للذكور والاناث حيث ان معدل الايض هو كمية السعرات 
+        الحرارية التي يحتاجها الجسم لاداء عمليات الجسم الرأيسية في حالة الراحة التامة   </span>  </div>
+<!--end fact div-->
+<!-- start div info-->
+  <div id="diviinfo">
+ <label  > :الجنس </label> 
+   <form action="" method="get" name="form2" onsubmit="return">
+   <ul id="ulsex"> 
+<li> <input type="radio"  name="sex2" value="male" id="male" ></li> 
+<li> <label for="male">ذكر</label><br> </li>
+<li>  <input type="radio"  name="sex2" value="female" id="female"> </li>
+<li> 
+  <label for="female">انثى</label><br></li>
+  </ul>
+</form>
+<ul id="uldiv">
+    <form>
+<li> <label for="age"> :العمر</label> </li>
+<li>   <input type="text" id="amor"  placeholder="Enter Age"><br>
+</li>
+<li> <label for="hei">:الطول </label> </li>
+<li>   <input type="text" id="tol"  placeholder=" (cm)ادخل الطول" ><br>
+</li>
+<li> <label for="weight"> :الوزن </label> </li>
+<li>   <input type="text"  id="waz" placeholder=" ادخل الوزن" ><br>
+</li>
+<li> <button  class="btsys" type="button" onclick="fun2()"> الناتج </button></li>
+    
+    
+</ul>
+</form>
+</div>
+
+
+</div>
+<div id="divres2">
+    <p id="result2"></p> 
+    <p>  </p> 
+
+    </div>
+</div>
+
+<div class="contaner2">
+    <div id="divhbmi"><h1 id="hbmi"> حميات غذائية </h1></div>
+    <p id="psys"> تساعدك خطط الحمية الغذئية التي يختارها النظام بناءا على وضعك الحالي وحالة جسمك على الوصول إلى الحالة المثالية لجسمك. جميع الأنظمة الغذائية مزودة بمجموعة متنوعة من الوصفات البسيطة واللذيذة التي تتضمن جميع المغذيات الأساسية والتي صممها خبراء التغذية لدينا
+    </p>
+  <a href="FoodAllergy.html"><button class="btsys" > نظامك الغذائي </button></a>
+</div>
+</div>
+<div class="contaner3">
+
+
+    <div id="mosoaa"><h1 id="hinfo"> موسوعة متنوعة </h1></div>
+    <div id="div1"> 
+        <h1 id="hdiv1"> نسبة الدهون في الجسم </h1>
+       <a id="adiv1" href="Fat percentage.html"> <img id="img1" src="https://static.webteb.net/images/content/tbl_articles_article_23359_8540093e519-75f5-422a-9790-92e475720340.jpg" alt="">
+       </a>
+    </div>
+
+    <div id="div2"> 
+        <h1 id="hdiv1"> معادلة الخصر بالنسبة للطول </h1>
+       <a id="adiv1" href="Equation.html"> <img id="img2" src="https://static.webteb.net/images/content/tbl_articles_article_15365_284.jpg" alt="">
+       </a>
+    </div>
+
+    <div id="div3"> 
+        <h1 id="hdiv1"> الكوليسترول الجديد : تعزيز مستوياته</h1>
+       <a id="adiv1" href="Cholesterol.html"> <img id="img3" src="https://static.webteb.net/images/content/tbl_articles_article_17836_970.jpg" alt="">
+       </a>
+    </div>
+
+
+    <div id="div4"> 
+        <h1 id="hdiv1"> اسباب السمنة المفرطة  </h1>
+       <a id="adiv1" href="Reasons.html"> <img id="img4" src="https://static.webteb.net/images/content/tbl_articles_article_22922_43484760826-ff92-4abd-a47b-30648144497c.jpg" alt="">
+       </a>
+    </div>
+
+    
+    <div id="div5"> 
+        <h1 id="hdiv1"> دليلك لفهم السعرات الحرارية  </h1>
+       <a id="adiv1" href="Calories.html"> <img id="img5" src="https://static.webteb.net/images/content/tbl_articles_article_14919_296f96b0dfa-faaf-4cd0-97ea-15021391d565.jpg" alt="">
+       </a>
+    </div>
+
+    
+    <div id="div6"> 
+        <h1 id="hdiv1"> اطعمة تسبب انخفاض مستوى الطاقة لديك   </h1>
+       <a id="adiv1" href="food.html"> <img id="img6" src="https://static.webteb.net/images/content/tbl_articles_article_19712_160b117a63f-e0bc-47ba-a807-6ed0241e58ef.jpg" alt="">
+       </a>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+
+</div>
+
+</body>
+</html>
